@@ -3,8 +3,11 @@
 
 1. <a href = "#1">ConstraintLayout</a></br>
    1.1 GuideLine
-
-  
+2. <a href = "#2">dataBinding && XML</a></br>
+   2.1 @{} 표현 정리</br>
+   2.2 View.GONE, View.VISIBLE</br>
+   2.3 true, false</br>
+   
 <a href = "#ref">참고링크</a></br>  
 
 ---
@@ -12,7 +15,7 @@
 ><a id = "1">1. ConstraintLayout</a>
 
 1.1 GuideLine</br>
--뷰의 탑에서 33% 지접에 투명 가이드라인을 만든다.
+-뷰의 탑에서 33% 지점에 투명 가이드라인을 만든다.
 ```xml
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -21,6 +24,9 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.33" />
 ```
+><a id = "2">2. dataBinding && XML</a>
+
+2.1 @{} 표현 정리</br>
 
 
 ---
