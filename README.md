@@ -43,6 +43,13 @@ android:onClick="@{()->main.showDialog()}"
 
 //2.1.3 alpha 세팅
 android:alpha="@{isFold ? 0.5f : 1.0f}"
+
+//2.1.4 EditText의 Text를 onClick 함수 parameter로 가져오기
+ <EditText
+     android:id="@+id/search_text"
+           
+<ImageButton
+   android:onClick="@{()->viewModel.onClickSearch(searchText.getText().toString())}"
 ```
 
 <a id = "2_2">2.2 View.GONE, View.VISIBLE</a>
