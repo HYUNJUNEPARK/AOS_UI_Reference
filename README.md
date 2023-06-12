@@ -40,6 +40,9 @@ android:onClick="@{()->main.showDialog()}"
    type="Boolean" />
 -BooleanValue의 디폴트는 b 로 적용된다.
 -BooleanValue가 true 라면 a 가, false 라면 b 가 적용된다.
+
+//2.1.3 alpha 세팅
+android:alpha="@{isFold ? 0.5f : 1.0f}"
 ```
 
 <a id = "2_2">2.2 View.GONE, View.VISIBLE</a>
