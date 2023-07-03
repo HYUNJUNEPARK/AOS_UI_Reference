@@ -7,6 +7,8 @@
    <a href = "#2_1">2.1 @{ } 표현 정리</a></br>
    <a href = "#2_2">2.2 View.GONE, View.VISIBLE</a></br>
    <a href = "#2_3">2.3 true, false</a></br>
+   <a href = "#2_4">2.4 Boolean 에 따른 다른 이벤트 지정</a></br>
+   <a href = "#2_5">2.5 Null 일 때 데이터 대체</a></br>
    
 <a href = "#ref">참고링크</a></br>  
 
@@ -90,6 +92,17 @@ android:enabled="@{isUnableBiometric? false : true}"
 -isUnableBiometric 가 Activity에서 초기화 되지 않는다면, true
 -isUnableBiometric 가 true 라면 false, false 라면 true
 ```
+
+<a id = "2_4">2.4 Boolean 에 따른 다른 이벤트 지정</a></br>
+```xml
+android:onClick="@{()-> aBoolean ? viewmodel.methodOne() : viewmodel.methodTwo()}"
+```
+
+<a id = "#2_5">2.5 Null 일 때 데이터 대체</a></br>
+```xml
+android:text='@{accountEntity.userId ?? "-"}'
+```
+
 
 
 <br></br>
