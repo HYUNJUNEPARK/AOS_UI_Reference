@@ -98,7 +98,7 @@ android:enabled="@{isUnableBiometric? false : true}"
 android:onClick="@{()-> aBoolean ? viewmodel.methodOne() : viewmodel.methodTwo()}"
 ```
 
-<a id = "#2_5">2.5 Null 일 때 데이터 대체</a></br>
+<a id = "2_5">2.5 Null 일 때 데이터 대체</a></br>
 ```xml
 android:text='@{accountEntity.userId ?? "-"}'
 ```
